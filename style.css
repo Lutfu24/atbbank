@@ -1,0 +1,150 @@
+#priceInp,
+#priceMonthInp {
+  width: 33rem;
+  height: 0.1rem;
+  appearance: none;
+  outline: none;
+}
+#priceInp::-webkit-slider-thumb,
+#priceMonthInp::-webkit-slider-thumb {
+  appearance: none;
+  background-color: #6f0bbb;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
+.card:hover {
+  margin-top: 2.5rem;
+  box-shadow: 0.1rem 0.3rem 0.3rem 0.3rem rgb(245, 245, 245);
+  transition: 0.4s;
+}
+.swiper-pagination {
+  position: relative;
+  top: 30rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.swiper-pagination-bullet {
+  position: relative;
+  transition: width 0.1s ease-in-out;
+  overflow: hidden;
+  background-color: rgb(175, 175, 175);
+}
+.swiper-pagination-bullet-active {
+  width: 1.5rem;
+  border-radius: 1rem;
+}
+.swiper-pagination-bullet-active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: #6f0bbb;
+  animation: bullet 3s ease-in-out;
+}
+@keyframes bullet {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.premium-card-div {
+  background: linear-gradient(to right, black 0%, rgb(192, 192, 192) 100%);
+}
+.box {
+  position: relative;
+  border-bottom-left-radius: 0%;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 2rem solid #f5eee8;
+  border-top: 2rem solid transparent;
+  transform: rotate(90deg);
+}
+.info-btn:hover {
+  transform: translateY(2rem);
+  transition-duration: 1s;
+}
+@media screen and (max-width: 430px) {
+  .card {
+    width: 10rem;
+    height: 10rem;
+    gap: 0;
+    overflow: hidden;
+  }
+  #sec1 {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .credit-btn {
+    width: 10rem;
+  }
+  .deposit-btn {
+    width: 10rem;
+  }
+  .credit-div {
+    flex-direction: column;
+  }
+  .credit-div div {
+    width: 20rem;
+  }
+  #input-div {
+    width: 15rem;
+    height: 6rem;
+  }
+  #priceInp,
+  #priceMonthInp {
+    width: 13rem;
+    margin-top: 5.7rem;
+  }
+  #order-btn {
+    width: 16rem;
+  }
+  #deposit-div {
+    width: 20rem;
+    height: 40rem;
+    padding-left: 1rem;
+  }
+  .deposit-div {
+    margin-left: 3.5rem;
+  }
+  #select {
+    width: 18rem;
+  }
+
+  #selects-div {
+    flex-direction: column;
+  }
+  #info-div {
+    width: 24rem;
+    margin-left: 1.5rem;
+  }
+  #sec3-div {
+    flex-direction: column;
+  }
+  #info-span {
+    margin-left: 2.5rem;
+  }
+  #info-sp {
+    margin-left: 7.5rem;
+  }
+  #fromInp,
+  #toInp {
+    width: 5rem;
+  }
+  #icon-sp {
+    font-size: 1rem;
+    margin: 2px;
+  }
+}
