@@ -15,7 +15,7 @@
 }
 .card:hover {
   margin-top: 2.5rem;
-  box-shadow: 0.1rem 0.3rem 0.3rem 0.3rem rgb(245, 245, 245);
+  box-shadow: 0.1rem 1.3rem 3.3rem 0.3rem rgb(226, 226, 226);
   transition: 0.4s;
 }
 .swiper-pagination {
@@ -76,75 +76,222 @@
   transform: translateY(2rem);
   transition-duration: 1s;
 }
-@media screen and (max-width: 430px) {
-  .card {
-    width: 10rem;
-    height: 10rem;
-    gap: 0;
-    overflow: hidden;
+#priceMonthInp::before {
+  content: "3 ay";
+  color: gray;
+  font-size: 12px;
+}
+#priceMonthInp::after {
+  content: "48 ay";
+  color: gray;
+  font-size: 12px;
+  margin-right: 3px;
+}
+#priceInp::before {
+  content: "300";
+  color: gray;
+  font-size: 12px;
+}
+#priceInp::after {
+  content: "40 000";
+  color: gray;
+  font-size: 12px;
+}
+.about:hover {
+  color: #6f0bbb;
+  cursor: pointer;
+}
+.about:hover .about-span {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 1870px) {
+  .footer-div-parent {
+    width: 100%;
   }
-  #sec1 {
-    gap: 0.5rem;
-    flex-wrap: wrap;
+  .footer-div {
+    width: 1050px;
   }
-  .credit-btn {
-    width: 10rem;
+}
+@media screen and (max-width: 1200px) {
+  .sw-div {
+    left: 50px;
   }
-  .deposit-btn {
-    width: 10rem;
+  .swiper-slide {
+    height: 25rem;
+  }
+  .swiper-slide img {
+    height: 25rem;
+    width: 100%;
+  }
+  #ic-div {
+    display: block;
+  }
+  #header {
+    position: relative;
+    background-color: white;
+    margin-top: 0px;
+  }
+  .atb360,
+  .navbar,
+  .about,
+  .az-div,
+  .phone {
+    display: none;
+  }
+  .icon {
+    width: 5rem;
+    height: 5rem;
+    padding-top: 13px;
+  }
+  .search {
+    position: absolute;
+    right: 100px;
+    bottom: 22px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+  .swiper-slide {
+    width: 100vw;
+  }
+  .swiper-slide img {
+    width: 100vw;
+  }
+  .info-title-parent {
+    width: 100%;
+  }
+  #pro-div {
+    width: 35%;
   }
   .credit-div {
-    flex-direction: column;
+    width: 100%;
   }
-  .credit-div div {
-    width: 20rem;
+  #credit-div-item {
+    width: 100%;
+  }
+  .credit-div-item {
+    width: 60%;
   }
   #input-div {
-    width: 15rem;
-    height: 6rem;
+    width: 86%;
   }
   #priceInp,
   #priceMonthInp {
-    width: 13rem;
-    margin-top: 5.7rem;
+    width: 86%;
   }
   #order-btn {
-    width: 16rem;
-  }
-  #deposit-div {
-    width: 20rem;
-    height: 40rem;
-    padding-left: 1rem;
-  }
-  .deposit-div {
-    margin-left: 3.5rem;
-  }
-  #select {
-    width: 18rem;
-  }
-
-  #selects-div {
-    flex-direction: column;
-  }
-  #info-div {
-    width: 24rem;
-    margin-left: 1.5rem;
+    width: 80%;
   }
   #sec3-div {
     flex-direction: column;
+    align-items: center;
   }
-  #info-span {
-    margin-left: 2.5rem;
+  #info-div {
+    width: 95%;
+    height: 20rem;
   }
-  #info-sp {
-    margin-left: 7.5rem;
+  #atb-card,
+  #inf-div-card,
+  .info-title-parent {
+    width: 95%;
   }
-  #fromInp,
-  #toInp {
-    width: 5rem;
+  #sec3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  #icon-sp {
-    font-size: 1rem;
-    margin: 2px;
+  #sec3-div {
+    width: 95%;
+    align-items: center;
+  }
+  #atb-card-item {
+    width: 90%;
+    height: 17rem;
+  }
+  #inf-div {
+    display: none;
+  }
+  #inf-div-card-item {
+    width: 95%;
+    height: 8rem;
+    margin-right: 50px;
+  }
+  #inf-div-card-item-p {
+    display: none;
+  }
+  #sec1 {
+    flex-wrap: wrap;
+    padding-top: 35px;
+  }
+  .card {
+    width: 47%;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .swiper-slide {
+    width: 90%;
+    left: 6%;
+  }
+  .swiper-slide img {
+    width: 90%;
+    border-radius: 5%;
+    height: 20rem;
+  }
+  .credit-div {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #sec3-div {
+    width: 95%;
+    align-items: center;
+    flex-direction: column;
+  }
+  #sec1 {
+    flex-wrap: wrap;
+    padding-top: 35px;
+  }
+  .card {
+    width: 47%;
+    margin-top: 5px;
+  }
+  #atb-card {
+    display: none;
+  }
+  #inf-div {
+    display: none;
+  }
+  #inf-div-card-item {
+    width: 80%;
+    height: 8rem;
+    margin-right: 50px;
+  }
+  #inf-div-card-item-p {
+    display: none;
+  }
+  #inf-div-card-item {
+    width: 55%;
+    height: 8rem;
+    margin-right: 50px;
+  }
+  .info-title-parent {
+    width: 95%;
+  }
+  #footer-div-item {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+    padding-left: 10px;
+  }
+  #footer-div {
+    flex-direction: column;
+    gap: 10px;
+    height: 25rem;
+    align-items: start;
+  }
+  #footer-div-item12 {
+    padding-left: 0%;
+    border-left: none;
   }
 }
